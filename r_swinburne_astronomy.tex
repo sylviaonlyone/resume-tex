@@ -3,10 +3,6 @@
 % Address: swinburne.nga.net.au
 %---
 
-% COVER LETTER -->
-% 
-%---
-
 % RESUME -->
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Here initiate the articale
@@ -28,6 +24,11 @@
 \renewcommand{\rmdefault}{phv} % Arial
 \renewcommand{\sfdefault}{phv} % Arial
 
+% use little space between list
+\usepackage{mdwlist}
+
+% enable comments
+\usepackage{verbatim}
 %\usepackage{paralist}
 
 % set hyperreference package
@@ -43,6 +44,12 @@
 % Here start the body of the article 
 \begin{document}
 
+% COVER LETTER -->
+\begin{comment}
+This is cover letter field.
+\end{comment}
+%---
+
 % generate the title
 %\maketitle
 % count pages
@@ -50,66 +57,84 @@
 % insert table contents
 %\tableofcontents
 
-\section*{Jingjing Liu}
+\begin{center}
+  \section*{Jingjing Liu}
+  \begin{tabular}{l r}
+    1079 North Road, Hughesdale, VIC 3166 & (043)5690185 \\
+    \multicolumn{2}{c}{sylviaonlyone@gmail.com} \\
+  \end{tabular}
+\end{center}
+
+\begin{comment}
 \begin{tabular}{l l}
-Mobile:  & 0435690185 \\
-E-mail:  & sylviaonlyone@gmail.com \\
-Address: & Hughesdale, VIC 3166 \\
-\multicolumn{2}{l}{Australia Permanent Resident, 175 visa holder} \\
+  Mobile:  & 0435690185 \\
+  E-mail:  & sylviaonlyone@gmail.com \\
+  Address: & Hughesdale, VIC 3166 \\
+  \multicolumn{2}{l}{Australia Permanent Resident, 175 visa holder} \\
 \end{tabular}
+\end{comment}
 
 % Profile -->
 \section*{Profile}
-\begin{itemize}
-\item 6 years C/C++ programming experience, and OO design \& dev. experience.
-\item Over 1 year experience on web design and implementing, test-driven working model.
-\item Introduced ClearSilver into html page generation successfully for the project.
-\item Optimize the performance of S30 products for Nokia.
-\item Pre-study on MeeGo for extending tech-scope of the companies.
-\item Self-motivated, always enthusiasm on new tech and open source tech.
-\item Rich experience on complex software dev., including top level design, implementing, and unit testing, maintaining the whole application platform. Follow the whole SDLC, and know well about software process model, like Waterfall and Agile.
-\item Rich experience on embedded Linux platform development.
-\item Experience with SQL and database.
-\end{itemize}
+\begin{itemize*}
+    \setlength\itemsep{0.4em}
+  \item 6 years C/C++ programming experience, and OO design \& dev. experience.
+  \item Over 1 year experience on web design and implementing, test-driven working model.
+  \item Introduced ClearSilver into html page generation successfully for the project.
+  \item Optimize the performance of S30 products for Nokia.
+  \item Pre-study on MeeGo for extending tech-scope of the companies.
+  \item Self-motivated, always enthusiasm on new tech and open source tech.
+  \item Rich experience on complex software dev., including top level design, implementing, and unit testing, maintaining the whole application platform. Follow the whole SDLC, and know well about software process model, like Waterfall and Agile.
+  \item Rich experience on embedded Linux platform development.
+  \item Experience with SQL and database.
+\end{itemize*}
 
 % Tech skills -->
 \section*{Technical skills}
-\begin{itemize}
-\item Language: expert on C/C++, good at Javascript, XML, HTML, familiar with ClearSilver, Shell, Python, SQL
-\item Application: GCC, Makefile, vim, Synergy, git, SourceSafe, SVN, VC++, gdb, Rational Purify
-\item Platform: major on Linux including MontaVista Linux, MeeGo; minor on Windows
-\item Design model: MVC, observer, factory, visitor
-\item Others: STL libraries, GTK+ based UI widgets design and development, event-driven development, test-driven development model, Agile/SCRUM
-\end{itemize}
+\begin{description*}
+    \setlength\itemindent{0cm}
+    \setlength\itemsep{0.4em}
+  \item [Language:] expert on C/C++, good at Javascript, XML, HTML, familiar with ClearSilver, Shell, Python, SQL
+  \item [Application:] GCC, Makefile, vim, Synergy, git, SourceSafe, SVN, VC++, gdb, Rational Purify
+  \item [Platform:] major on Linux including MontaVista Linux, MeeGo; minor on Windows
+  \item [Design model:] MVC, observer, factory, visitor
+  \item [Others:] STL libraries, GTK+ based UI widgets design and development, event-driven development, test-driven development model, Agile/SCRUM
+\end{description*}
 
 % Experience -->
 \section*{Experience}
 
 \paragraph{Software Engineer in Elektrobit (Beijing)} (2007 $\sim$ 2010)
-\begin{itemize}
-\item Worked on MeeGo pre-study project, including track and study MeeGo's activities on the community, deposit knowledge of MeeGo, build development environment and deploy simulator for application development.
-\item Worked at Nokia's premise for S30 project as an external employee for application development, including bug-fixing, trouble-shooting, system optimization and new products' porting. C/C++ program, S30 platform on Linux. As a scrum team member, co-operated smoothly with a large-scale of engineers from different sites in different roles.
-\item Developed a web-based tool for mobile system test management, which designed in the Server-Client model, implemented by C++, JavaScript plus XUL, XML, HTML on Windows platform in the test-driven manner, and obeyed the Agile process model. Introduced ClearSilver into the web-page generation module successfully. Acted as the requirement manager as well to gathering requirements and made documentations.
-\end{itemize}
+\begin{itemize*}
+    \setlength\itemsep{0.4em}
+  \item Worked on MeeGo pre-study project, including track and study MeeGo's activities on the community, deposit knowledge of MeeGo, build development environment and deploy simulator for application development.
+  \item Worked at Nokia's premise for S30 project as an external employee for application development, including bug-fixing, trouble-shooting, system optimization and new products' porting. C/C++ program, S30 platform on Linux. As a scrum team member, co-operated smoothly with a large-scale of engineers from different sites in different roles.
+  \item Developed a web-based tool for mobile system test management, which designed in the Server-Client model, implemented by C++, JavaScript plus XUL, XML, HTML on Windows platform in the test-driven manner, and obeyed the Agile process model. Introduced ClearSilver into the web-page generation module successfully. Acted as the requirement manager as well to gathering requirements and made documentations.
+\end{itemize*}
 
 \paragraph{Software Engineer in Dalian Matsushita Communication Software Engineering Co., Ltd} (2004 $\sim$ 2007) \\*
 It is a CMMI3 certified Japanese company which looks high upon accurate process control and documentations. I got the waterfall process control training there and obtained a deep understanding of the manner as a participant. 
-\begin{itemize}
-\item As a key member and sub-project leader, developed GTK+ based mobile phone middle-ware under MontaVista Linux, in Objective C. Composed all levels design documents, wrote and maintained unit-test program and responded on version control by using SourceSafe.
-\item Leaded a system test team for mobile phone software memory-leak testing by using IBM Rational Purify on MontaVista Linux. Responded on Distributing tasks, gathering the error reports, analyzing and filtering the data and transferring to developers.
-\item Developed C/C++ coding-check tool for the whole R\&D department use, by studying the C++ Grammar, defining the structures and programming by C/C++ via VC 6.0 on Windows platform.
-\end{itemize}
+\begin{itemize*}
+    \setlength\itemsep{0.4em}
+  \item As a key member and sub-project leader, developed GTK+ based mobile phone middle-ware under MontaVista Linux, in Objective C. Composed all levels design documents, wrote and maintained unit-test program and responded on version control by using SourceSafe.
+  \item Leaded a system test team for mobile phone software memory-leak testing by using IBM Rational Purify on MontaVista Linux. Responded on Distributing tasks, gathering the error reports, analyzing and filtering the data and transferring to developers.
+  \item Developed C/C++ coding-check tool for the whole R\&D department use, by studying the C++ Grammar, defining the structures and programming by C/C++ via VC 6.0 on Windows platform.
+\end{itemize*}
 
 % Education -->
 \section*{Education}
+Bachelor of Engineering, Dalian University of Techonology, China, 2004
+
+\begin{comment}
 \begin{tabular}{l l}
-Duration:   & 2000 - 2004 \\
-University: & Dalian University of Technology \\
-Degree:     & Bachelor of Engineering \\
-Major:      & Electronic and Information Engineering \\
-Minor:      & International Economic and Trade \\
-Country:    & China \\
+  Duration:   & 2000 - 2004 \\
+  University: & Dalian University of Technology \\
+  Degree:     & Bachelor of Engineering \\
+  Major:      & Electronic and Information Engineering \\
+  Minor:      & International Economics and Trade \\
+  Country:    & China \\
 \end{tabular}
+\end{comment}
 
 \end{document}
 %---
