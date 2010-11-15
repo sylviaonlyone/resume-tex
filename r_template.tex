@@ -1,0 +1,121 @@
+% DISCRIPTION -->
+% Title:   
+% Address: 
+%---
+
+% RESUME -->
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Here initiate the articale
+%
+% set the general style of the article 
+\documentclass[a4paper,11pt]{article}
+\usepackage{a4wide}
+\pagestyle{empty} 
+%\usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=2cm]{geometry}
+
+% set page layout
+%\addtolength{\hoffset}{-1cm}
+%\addtolength{\textwidth}{2cm}
+
+% set fonts
+% - use times new roman font
+%\usepackage{pslatex}
+% - use Arial font
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+
+% use little space between list
+\usepackage{mdwlist}
+
+% enable comments
+\usepackage{verbatim}
+%\usepackage{paralist}
+
+% set hyperreference package
+%\usepackage{hyperref}
+%\hypersetup{colorlinks=false}
+%\urlstyle{same}
+
+% define the title
+%\title{Name}
+%\author{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Here start the body of the article 
+\begin{document}
+
+% COVER LETTER -->
+\begin{comment}
+This is cover letter field.
+\end{comment}
+%---
+
+% generate the title
+%\maketitle
+% count pages
+%\mainmatter
+% insert table contents
+%\tableofcontents
+
+\begin{center}
+  \section*{Full Name}
+  \begin{tabular}{l r}
+    Address, & (12)3456 \\
+    \multicolumn{2}{c}{e-mail@address} \\
+  \end{tabular}
+\end{center}
+
+\begin{comment}
+\begin{tabular}{l l}
+  Mobile:  & (12)3456 \\
+  E-mail:  & e-mail address \\
+  Address: & 111, road, state \\
+  \multicolumn{2}{l}{One column information} \\
+\end{tabular}
+\end{comment}
+
+% Profile -->
+\section*{Profile}
+\begin{itemize*}
+    \setlength\itemsep{0.4em}
+  \item Profiles details goes here 1
+  \item Profiles details goes here 2
+\end{itemize*}
+
+% Tech skills -->
+\section*{Technical skills}
+\begin{description*}
+    \setlength\itemindent{0cm}
+    \setlength\itemsep{0.4em}
+  \item [Label 1:] Technical skills goes here 1
+  \item [Label 2:] Technical skills goes here 2
+\end{description*}
+
+% Experience -->
+\section*{Experience}
+
+\paragraph{Company name} (start-year $\sim$ end-year) \\*
+Some descriptions
+\begin{itemize*}
+    \setlength\itemsep{0.4em}
+  \item Experience goes here 1
+  \item Experience goes here 2
+\end{itemize*}
+
+% Education -->
+\section*{Education}
+Bachelor of Engineering, Name of University, China, 2004
+
+\begin{comment}
+\begin{tabular}{l l}
+  Duration:   & start - end \\
+  University: & Name of University \\
+  Degree:     & Bachelor of Engineering \\
+  Major:      & My major subject \\
+  Minor:      & My minor subject \\
+  Country:    & My country \\
+\end{tabular}
+\end{comment}
+
+\end{document}
+%---
