@@ -1,4 +1,4 @@
 #!/bin/bash
 latex -output-directory=./tmp/ $1; 
-dvipdf ./tmp/$1.dvi ./tmp/$1.pdf; 
-mv ./tmp/$1.pdf pdf_repo/;
+dvipdf ./tmp/$2.dvi ./tmp/$2.pdf; 
+mv ./tmp/$2.pdf pdf_repo/;
